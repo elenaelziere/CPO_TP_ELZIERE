@@ -27,10 +27,10 @@ uneBrasserie) {
  public boolean Décapsuler(){
      if (ouverte==false) {
          ouverte=true;
-         System.out.println("la bière est décapsulée");
+        
      }
      else {
-         System.out.println("erreur:bière déjà ouverte");
+         
          ouverte=false;
      }
      return ouverte;
