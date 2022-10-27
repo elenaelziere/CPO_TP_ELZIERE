@@ -13,6 +13,7 @@ public class Voiture {
     String modèle;
     String marque;
     int puissance; 
+    Personne proprietaire;
     public void Caractéristiques() {
     System.out.println("Modèle : " +modèle + "/n"+ " Marque : " + marque + "/n" + "Puissance Cv : " + puissance ) ;
     }
