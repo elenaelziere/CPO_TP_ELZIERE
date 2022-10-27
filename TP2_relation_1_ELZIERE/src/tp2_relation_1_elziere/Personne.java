@@ -27,11 +27,26 @@ public Personne(String unNom, String unPrénom){
     
 @Override
 public String toString() {
-   String chaine_a_retourner;
-   return = nom + prénom + "a" + nbVoitures + "voitures";
+   return nom +""+ prénom + "a" + nbVoitures + "voitures";
     } 
 
-public boolean 
-
-
-}
+ public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
+ if (voiture_a_ajouter.proprietaire!=null) {
+     System.out.println( voiture_a_ajouter+ "déjà prise");
+     return false;
+ }
+ else {
+         if (this.nbVoitures==3){
+         System.out.println(this.nom+this.prénom+"a déjà 3 voitures");
+         return false;
+         }
+         else {
+         this.liste_voitures[nbVoitures]=voiture_a_ajouter;
+         nbVoitures +=1;
+         voiture_a_ajouter.proprietaire=this;
+                 return true;
+         }
+    }   
+   }
+ }
+            

@@ -25,8 +25,7 @@ public Voiture(String unModèle, String uneMarque, int unePuissance){ //
 
 @Override
 public String toString() {
-   String chaine_a_retourner;
-   chaine_a_retourner = modèle +" de chez" + marque +"avec une puissance de"+ puissance + "( en CV) ";
+  return modèle +" de chez" + marque +"avec une puissance de"+ puissance + "( en CV) ";
 
 }    
 

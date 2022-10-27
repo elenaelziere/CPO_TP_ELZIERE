@@ -24,7 +24,25 @@ public class TP2_relation_1_ELZIERE {
     Personne bob = new Personne("Bobby", "Sixkiller");
     Personne reno = new Personne("Reno", "Raines");
     System.out.println("liste des voitures disponibles "+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
-    }
     
+    
+bob.ajouter_voiture(uneClio);
+    System.out.println ("la premiere voiture de Bob est" + bob.liste_voitures [0]);
+    bob.ajouter_voiture(une2008);
+    System.out.println ("la deuxieme voiture de Bob est" + bob.liste_voitures [1]);
+    reno.ajouter_voiture(uneMicra);
+    System.out.println ("la premiere voiture de Reno est" + reno.liste_voitures [0]);
+    reno.ajouter_voiture(uneMicra);
+    System.out.println ("la deuxieme voiture de Reno est" + reno.liste_voitures [1]);
+    //On affiche les voitures et les propriétaires
+ 
+ 
+reno.ajouter_voiture(uneClio);
+   
+   System.out.println(bob);
+  
+   System.out.println(reno);
+ 
+}
 
 }
