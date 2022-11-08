@@ -20,6 +20,7 @@ public class TP4Héritage {
         System.out.println(Épée1);
     Épée Épée2 = new Épée("Durandal",4,7);
         System.out.println(Épée2);
+        
     Baton Baton1 = new Baton("Chêne",4,5);
         System.out.println(Baton1);
     Baton Baton2 = new Baton("Charme",5,6);

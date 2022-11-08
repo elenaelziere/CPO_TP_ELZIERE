@@ -21,7 +21,7 @@ public Armes(String unNom, int uneAttaque){
 @Override
 public String toString() {
 String chaine_a_retourner;
-   chaine_a_retourner = " Arme : " + nom + " \n" + "Niveau d'attaque : " + nvAttaque ;
+   chaine_a_retourner = "Arme : " + nom + " \n" + "Niveau d'attaque : " + nvAttaque ;
 return chaine_a_retourner ;
 }
 
