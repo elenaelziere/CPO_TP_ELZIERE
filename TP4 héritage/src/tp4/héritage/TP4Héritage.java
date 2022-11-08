@@ -4,6 +4,8 @@
  */
 package tp4.héritage;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author elena
@@ -25,6 +27,19 @@ public class TP4Héritage {
         System.out.println(Baton1);
     Baton Baton2 = new Baton("Charme",5,6);
         System.out.println(Baton2);
-    }
-    
+   
+ArrayList <Armes> tab_Armes = new ArrayList <Armes>();  
+tab_Armes.add(Épée1);    
+tab_Armes.add(Épée2);     
+tab_Armes.add(Baton1);     
+tab_Armes.add(Baton2); 
+
+int taille = tab_Armes.size();
+int longueur = taille-1;
+for (int i = 0; i<longueur; i++) {
+    System.out.print(tab_Armes.get(i)+",");
+}
+System.out.println(tab_Armes.get(taille-1));
+
+}
 }
