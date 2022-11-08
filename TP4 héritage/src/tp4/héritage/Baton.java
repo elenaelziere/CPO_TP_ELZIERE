@@ -13,6 +13,21 @@ public class Baton extends Armes{
     
     public Baton (String unNom, int uneAttaque, int unAge){
         super(unNom, uneAttaque);
-        age = unAge;        
+        if (unAge > 0){
+            age = unAge;
+        } else {
+            age = 0;
+        }if (unAge >= 100){
+            age = 100;
+        }
+        
+        
     }
+    
+@Override
+public String toString() {
+String chaine_a_retourner;
+   chaine_a_retourner = " Baton : " + nom + " \n" + "Niveau d'attaque : " + nvAttaque + "\n" + "Âge : " + age;
+return chaine_a_retourner ;
+
 }

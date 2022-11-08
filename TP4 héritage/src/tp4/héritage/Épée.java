@@ -13,6 +13,21 @@ public class Épée extends Armes{
     
     public Épée (String unNom, int uneAttaque, int uneFinesse){
         super(unNom, uneAttaque);
-        finesse = uneFinesse;
+        if (uneFinesse > 0) {
+            finesse = uneFinesse; 
+        } else { 
+            finesse = 0;
+        } if (uneFinesse <= 100)
+            finesse = 100;
     }
+
+@Override
+public String toString() {
+String chaine_a_retourner;
+   chaine_a_retourner = " Épée : " + nom + " \n" + "Niveau d'attaque : " + nvAttaque + "\n" + "Finesse : " + finesse;
+return chaine_a_retourner ;
+}
+
+
+
 }
