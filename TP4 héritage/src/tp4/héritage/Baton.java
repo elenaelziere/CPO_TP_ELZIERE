@@ -8,11 +8,11 @@ package tp4.héritage;
  *
  * @author elena
  */
-public class Épée extends Armes{
-    int finesse; 
+public class Baton extends Armes{
+    int age;
     
-    public Épée (String unNom, int uneAttaque, int uneFinesse){
+    public Baton (String unNom, int uneAttaque, int unAge){
         super(unNom, uneAttaque);
-        finesse = uneFinesse;
+        age = unAge;        
     }
 }
