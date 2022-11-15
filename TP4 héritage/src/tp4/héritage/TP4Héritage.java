@@ -80,7 +80,13 @@ Baton Baton5 = new Baton("Pin",5,7);
 Épée Épée4 = new Épée("Dague",8,5);
 Épée Épée5 = new Épée("Poignard",7,3);
        
+Guerrier3.ajouter_armes(Baton3);
+Guerrier3.ajouter_armes(Épée4);
+Guerrier3.ajouter_armes(Épée4);
 
+Magicien3.ajouter_armes(Baton4);
+Magicien3.ajouter_armes(Baton5);
+Magicien3.ajouter_armes(Épée3);
 
     }
     }
