@@ -18,6 +18,10 @@ public Armes(String unNom, int uneAttaque){
     nvAttaque = uneAttaque;        
 }
 
+public String getNom() {
+    return nom;
+}
+
 @Override
 public String toString() {
 String chaine_a_retourner;

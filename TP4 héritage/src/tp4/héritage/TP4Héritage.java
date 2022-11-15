@@ -4,10 +4,10 @@
  */
 package tp4.héritage;
 
-import Armes.Épée;
-import Armes.Baton;
-import Armes.Armes;
+import Armes.*;
+import Personnages.*;
 import java.util.ArrayList;
+
 
 /**
  *
@@ -41,8 +41,46 @@ int taille = tab_Armes.size();
 int longueur = taille-1;
 for (int i = 0; i<longueur; i++) {
     System.out.print(tab_Armes.get(i)+",");
-}
-System.out.println(tab_Armes.get(taille-1));
 
 }
+
+   
+
+Magicien Magicien1 = new Magicien("Gandalf",65,true);
+        System.out.println(Magicien1);
+Magicien Magicien2 = new Magicien("Garcimore",44,false);
+        System.out.println(Magicien2);
+        
+Guerrier Guerrier1 = new Guerrier("Conan",78,false);
+        System.out.println(Guerrier1);
+Guerrier Guerrier2 = new Guerrier("Lannister",45,true);
+        System.out.println(Guerrier2);
+        
+ArrayList <Personnage> tab_Persos = new ArrayList <Personnage>();  
+tab_Persos.add(Magicien1);    
+tab_Persos.add(Magicien2);     
+tab_Persos.add(Guerrier1);     
+tab_Persos.add(Guerrier2);  
+
+int taille2 = tab_Persos.size();
+int longueur2 = taille2-1;
+for (int i = 0; i<longueur2; i++) {
+    System.out.print(tab_Persos.get(i)+",");
+
 }
+System.out.println(tab_Armes.get(taille-1));
+System.out.println(tab_Persos.get(taille2-1));
+    
+Guerrier Guerrier3 = new Guerrier("John",76,true);
+Magicien Magicien3 = new Magicien("Gargamel",51,false);
+Baton Baton3 = new Baton("Bûche",7,6);
+Baton Baton4 = new Baton("Branche",9,5);
+Baton Baton5 = new Baton("Pin",5,7);
+Épée Épée3 = new Épée("Lame",4,2);
+Épée Épée4 = new Épée("Dague",8,5);
+Épée Épée5 = new Épée("Poignard",7,3);
+       
+
+
+    }
+    }
